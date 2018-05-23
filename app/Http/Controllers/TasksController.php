@@ -36,7 +36,7 @@ class TasksController extends Controller{
      public function store(Request $request)
     {
          $this->validate($request, [
-            'status' => 'required|max:191',   // 追加
+            'status' => 'required|max:191',   
             'content' => 'required|max:191',
         ]);
 
